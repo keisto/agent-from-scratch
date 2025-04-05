@@ -3,16 +3,131 @@
     {
       "role": "user",
       "content": "what is the weather?",
-      "id": "f748724a-14ec-4302-80a9-42deb238a80c",
-      "createdAt": "2025-04-05T04:41:28.222Z"
+      "id": "73b2d0ad-c71e-4734-8351-5b7801b380b6",
+      "createdAt": "2025-04-05T08:14:57.079Z"
     },
     {
       "role": "assistant",
-      "content": "I don't have real-time weather data. You can check a weather website or app for the most current information.",
+      "content": "Could you please specify the location for which you would like to know the weather?",
       "refusal": null,
       "annotations": [],
-      "id": "b41e7b1c-293c-40eb-9a5a-4f1114fd5fdf",
-      "createdAt": "2025-04-05T04:41:29.798Z"
+      "id": "9937c24c-42c5-471b-a853-db79fa0be96a",
+      "createdAt": "2025-04-05T08:14:57.790Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather?",
+      "id": "1720f1f5-4363-4c78-a23e-dadb8edb85ad",
+      "createdAt": "2025-04-05T08:15:46.716Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_ybirUv6jHIwxEcOy1KroGecA",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"reasoning\":\"To provide the current weather information.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "55bc8ed9-e55d-425c-a323-3543d1fa9137",
+      "createdAt": "2025-04-05T08:15:47.722Z"
+    },
+    {
+      "role": "tool",
+      "content": "hot, 90deg",
+      "tool_call_id": "call_ybirUv6jHIwxEcOy1KroGecA",
+      "id": "7731c580-90b3-4d05-9e42-65959edd7bfe",
+      "createdAt": "2025-04-05T08:15:47.723Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather?",
+      "id": "af8b0d6b-1994-436d-8c1a-f13a4e2a79a0",
+      "createdAt": "2025-04-05T08:21:51.133Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "annotations": [],
+      "id": "845efecb-5388-4f71-94f1-70dca8411dc9",
+      "createdAt": "2025-04-05T08:21:52.069Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather now?",
+      "id": "4e3ec9fc-4f23-4f9f-9a4a-e95ee1ac84b3",
+      "createdAt": "2025-04-05T08:22:01.489Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "annotations": [],
+      "id": "12807842-9957-43d3-b5ee-f571a118edc6",
+      "createdAt": "2025-04-05T08:22:02.170Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather now?",
+      "id": "67ce127e-8811-4ef4-b8aa-7a2d8e61315e",
+      "createdAt": "2025-04-05T08:22:09.330Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "annotations": [],
+      "id": "d1045661-903f-4c07-aa69-71fa1aceba22",
+      "createdAt": "2025-04-05T08:22:09.995Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather again now?",
+      "id": "2456c408-5a0a-40a8-a7c3-f0b196638226",
+      "createdAt": "2025-04-05T08:22:17.864Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "annotations": [],
+      "id": "6caba729-d6b7-4be9-bd97-e9a21d5b9d27",
+      "createdAt": "2025-04-05T08:22:18.555Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather again now?",
+      "id": "a08e81f0-45b5-4d56-8688-dd6178e70973",
+      "createdAt": "2025-04-05T08:48:10.068Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "annotations": [],
+      "id": "b717eca0-0aee-418e-bc7a-d672ceb51516",
+      "createdAt": "2025-04-05T08:48:10.959Z"
+    },
+    {
+      "role": "user",
+      "content": "what is the weather right now?",
+      "id": "4d7430b0-f4d3-443d-9916-ca7a696bbc47",
+      "createdAt": "2025-04-05T08:48:19.009Z"
+    },
+    {
+      "role": "assistant",
+      "content": "The current weather is hot, with a temperature of 90 degrees.",
+      "refusal": null,
+      "annotations": [],
+      "id": "356ff6c1-7209-4e33-ba80-ff4cb3fca3c5",
+      "createdAt": "2025-04-05T08:48:19.615Z"
     }
   ]
 }

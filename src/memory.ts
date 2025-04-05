@@ -1,6 +1,7 @@
 import { JSONFilePreset, JSONFileSyncPreset } from 'lowdb/node'
 import type { AIMessage } from '../types'
 import { v4 as uuidv4 } from 'uuid'
+import { runTool } from './toolRunner'
 
 export type MessageWithMetaData = AIMessage & {
   id: string
@@ -41,4 +42,8 @@ export const addMessages = async (messages: AIMessage[]) => {
 export const getMessages = async () => {
   const db = await getDb()
   return db.data.messages.map(removeMetadata)
+}
+
+export const saveToolResponse = async (toolCallId: string, toolResponse: string) => {
+  return addMessages([{ role: 'tool', content: toolResponse, tool_call_id: toolCallId }])
 }
